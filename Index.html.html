@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team oppgave</title>
+    <link rel="script" href="Script.js">
+    <style>
+
+        body {
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #tamago {
+            background-color: rgb(69, 122, 201);
+            height: 500px;
+            width: 400px;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        #screenDiv {
+            display: block;
+            height: 300px;
+            width: 300px;
+            border: solid black 2px;
+            background-color: antiquewhite;
+            margin-top: 50px;
+            margin-left: 50px;
+            justify-content: center;
+            border-radius: 20px;
+            background-size: 550px;
+            background-repeat: no-repeat;
+        }
+        #buttons {
+            margin-top: 40px;
+            margin-left: 120px;
+            height:10;
+
+        }
+        .individBtns{
+            height: 35px;
+            border-radius: 50%;
+            background-color: rgb(238, 92, 153);
+
+        }
+
+        #hungryBar{
+            background-color: green;
+            border: solid 1px;
+            margin-top: -18p;
+            border-radius: 30px 30px 4px 4px;
+        }
+
+        #happyBar{
+            width: 100px;
+            border: solid 1px;
+            margin-top: 100p;
+            position: relative;
+            z-index: 2;
+
+        }
+        
+        #cat{
+            display: flex;
+            width: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div id="tamago">
+       <div id="buttons">
+            <button onclick="feed" class="individBtns">Feed</button>
+            <button onclick="clean" class="individBtns">Clean</button>
+            <button onclick="play" class="individBtns">Play</button>
+       </div>
+        <div id="screenDiv" style="background-image: url('./Background.png') ;">
+            <div id="hungryBar" style="width: ${getWidthHungry()}" >*</div>
+            <div id="cleanBar" >Dette er en clean bar</div>
+            <div id="happyBar">happy</div>
+            <img id="cat" src="cat.jpeg" alt="">
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
